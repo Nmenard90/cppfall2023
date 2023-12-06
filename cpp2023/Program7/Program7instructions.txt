@@ -1,0 +1,58 @@
+COSC 1337 Programming Fundamentals II
+Kathryn Rehfield
+Lab 7: Recursion
+Due: 12/05/23
+ Make any modifications necessary to address feedback about your previous lab.
+Modifications to your program:
+You will add one new main menu option, so your main menu will now be:
+Read Collection
+Display Collection
+Sort Collection
+Find a CD
+Find a CD * Recursive Version *
+Edit a CD
+Add Tracks for a CD
+Delete All Tracks for a CD
+Math Break
+Quit
+ Option 5 – Find a CD * Recursive Version *
+You can use either a linear search or a binary search - your choice.
+When the user chooses option 5, a new function will be called.
+This function will start out the same as the original findCD  function, you will read the artist and title from the user.  Then you will pass the cd array, the size of the array, the artist and title to be found to your recursive Boolean function that will return true if the cd is in the collection and false if it is not.  Your new findCD function will display the result.
+You will add one new math beak menu option, so your math beak menu will now be:
+Even or Odd
+Prime Number
+String Reverse
+End my Math Break
+Option 3 – String Reverse
+When the user chooses option 3, a new function will be called.
+This function will read a string from the user.  This string may or may not have spaces in it.
+This function will call a recursive function that prints the string in reverse order.   You decide what should be passed to this function, but it must be recursive.
+You will submit the following: 
+Your program source code named “lab7_Lastname.cpp”
+NOTE – Violating any of the following will get you a 20 point deduction on your lab:
+Your main() controls the program.  Your main() should never just call another function to do all the work.
+You should NEVER call main().
+You should NEVER intentionally write an infinite loop.
+You should NEVER use break, exit, quit, end, return, or anything to leave a loop, function, or other construct prematurely, unless it is part of the structure as in a switch statement.
+You should NEVER have a function call itself, unless it is intentional recursion.
+You should NEVER use global variables.  However, you may use global constants if it is appropriate and they are used properly.
+You should have only one return statement in a function that returns a value. (Recursion is the exception.)
+Lab Grade Points
+Comments 
+Including:
+Program description (comment block at top of program with name, lab number and complete program description)
+Function descriptions (see function heading below)
+Comments at major algorithm steps (at a minimum)
+Followed directions
+Correct output
+Structured program design
+Meaningful identifier names
+ 
+Function heading should look similar to this:
+/**************************************************/
+/* Function:   functionName                                       
+/* Inputs:       parameter names and what they represent
+/* Outputs:    return value name and description
+/* Purpose:    This function blah, blah, blah...        
+/**************************************************/

@@ -1,0 +1,59 @@
+COSC 1337 Programming Fundamentals II
+Kathryn Rehfield
+Lab 3: Arrays
+Due: 10/18/23  1:40pm
+Make any modifications necessary to address feedback about your previous lab.
+Remove all traces of the “DisplayTestCD” function and menu option.
+ Now you will start writing the program that will process a CD collection as an array of CD objects.  Your menu will now have the following options:
+Read Collection
+Display Collection
+Sort Collection
+Find a CD
+Edit a CD
+Math Beak
+Quit
+Each menu choice will call a different function.  If you did not put the Math Break code into its own function before, you will do it in this lab. You will write function stubs for options 3, 4, and 5.  You will implement options 1 and 2 for Lab 3. Display an error message if an invalid option is entered.  You can assume they will enter an integer option when prompted.
+Option 1: Reads 27 records out of a file.  You can assume the data is all there and it is correct. You can use my cd file or create one of your own, but make sure it works with my file.
+Option 2: Displays all 27 records with the following column headings:
+Artist                     Title                       Year Released
+(See the attached image for how your output should look.)
+Do not allow the user to select options 2, 3, 4, or 5 if they have not read the collection.  You must make sure the collection was actually read, not just if option 1 got selected, since the file may have failed to open.
+You will submit the following:
+Your program source code named “lab3_Firstname_Lastname.cpp”
+
+NOTE – Violating any of the following will get you a 20 point deduction on your lab:
+Your main() controls the program.  Your main() should never just call another function to do all the work.
+You should NEVER call main().
+You should NEVER intentionally write an infinite loop.
+You should NEVER use break, exit, quit, end, return, or anything to leave a loop, function, or other construct prematurely, unless it is part of the structure as in a switch statement.
+You should NEVER have a function call itself, unless it is intentional recursion.
+You should NEVER use global variables.  However, you may use global constants if it is appropriate and they are used properly.
+You should have only one return statement in a function that returns a value. (Recursion is the exception.)
+
+Lab Grade Points                          
+Comments 
+Including:
+Program description (comment block at top of program with name, lab number and complete program description)
+Function descriptions (see function heading below)
+Comments at major algorithm steps (at a minimum)
+Followed directions
+Correct output
+Structured program design
+Meaningful identifier names
+
+Program heading should look similar to this:
+/*********************************************************************/
+/* Your name
+/* Lab 1 Solution                                                    
+/* This program does this and that
+/* (give details that would help a programmer understand
+/*  what the program does before looking at the code)                            
+/*********************************************************************/ 
+
+Function heading should look similar to this:
+/**************************************************/
+/* Function:   functionName                                       
+/* Inputs:       parameter names and what they represent
+/* Outputs:    return value name and description
+/* Purpose:    This function blah, blah, blah...        
+/**************************************************/

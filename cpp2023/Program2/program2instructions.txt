@@ -1,0 +1,61 @@
+COSC 1337 Programming Fundamentals II
+Kathryn Rehfield
+Lab 2: Classes
+Due: 10/03/23
+YOUR LAB 2 WILL INCLUDE YOUR CORRECTED CODE FROM LAB1. MATH BREAK WILL REMAIN IN YOUR LAB FOR THE REST OF THE SEMESTER. THE OPTION FOR MATH BREAK WILL ALWAYS BE IN THE MENU AND SHOULD FUNCTION AS IT DID IN LAB 1.
+ By the time you have completed all the parts of these labs you will have a menu driven program that allows the user to manage a small CD collection with the following options:
+Read Collection
+Display Collection
+Sort Collection
+Find a CD
+Edit a CD
+Math Break
+Quit
+You will implement the options in stages.
+Adding to your corrected code from Lab 1, for Lab 2 you will write a class declaration of the CD class which includes the following attributes:
+Artist (string)
+Title (string)
+Year Released (integer)
+You should have accessors and mutators for each class attribute.  Your will also have a constructor that initializes the data attributes to the appropriate null value - empty strings or 0.  Your class definition should include only the member function prototypes.  Put the function definitions outside the class definition. 
+Include all of your code in one source file. Put the class definition and function code at the top of the file above your program function prototypes.
+Now, your menu will look like this:
+Display Test CD
+Math Break
+Quit
+ When option 1 is chosen, your main should call a function that will be used only for Lab 2 in order to test your class code. Just create a CD object, set values, and then display the values.
+You will submit the following:
+Your program source code named “lab2_FirstName_Lastname.cpp”
+ 
+NOTE – Violating any of the following will get you a 20 point deduction on your lab:
+Your main() controls the program.  Your main() should never just call another function to do all the work.
+You should NEVER call main().
+You should NEVER intentionally write an infinite loop.
+You should NEVER use break, exit, quit, end, return, or anything to leave a loop, function, or other construct prematurely, unless it is part of the structure as in a switch statement.
+You should NEVER have a function call itself, unless it is intentional recursion.
+You should NEVER use global variables.  However, you may use global constants if it is appropriate and they are used properly.
+You should have only one return statement in a function that returns a value. (Recursion is the exception.)
+Lab Grade Points                          
+Comments 
+Including:
+Program description (comment block at top of program with name, lab number and complete program description)
+Function descriptions (see function heading below)
+Comments at major algorithm steps (at a minimum)
+Followed directions
+Correct output
+Structured program design
+Meaningful identifier names
+Program heading should look similar to this:
+/*********************************************************************/
+/* Your name
+/* Lab 1 Solution                                                    
+/* This program does this and that
+/* (give details that would help a programmer understand
+/*  what the program does before looking at the code)                            
+/*********************************************************************/ 
+Function heading should look similar to this:
+/**************************************************/
+/* Function:   functionName                                       
+/* Inputs:       parameter names and what they represent
+/* Outputs:    return value name and description
+/* Purpose:    This function blah, blah, blah...        
+/**************************************************/

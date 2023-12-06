@@ -1,0 +1,94 @@
+By the time you have completed all of the labs for the semester, you will have a menu driven program that allows the user to manage a small CD collection with the following options:
+
+Read Collection
+Display Collection
+Sort Collection
+Find a CD
+Edit a CD
+Math Break
+Quit
+You will start with the “Math Break” option, which gives the user a slightly fun break from managing their CD collection.
+
+For this first lab, your menu will look like this:
+
+Math Break
+Quit
+The Math Break option will have the following sub-menu:
+
+Even or Odd
+Prime Number
+End my Math Break
+Your program will continue to display the Math Break menu until they choose the option to end their Math Break.  When they choose to end their Math Break, your program should display the main menu. When they want to quit the whole program they will choose “Quit” from the menu.
+
+Be sure to use a data validation loop to make sure each option the user enters is a valid option for the menu displayed.
+
+Each “Math Break” menu option should invoke a function to play the chosen game:
+
+evenOdd
+primeNumber
+Function evenOdd() does the following:
+
+Prompt user for an integer (0 or larger)
+Validate the user input, checking for negative integers, and not move forward until the user has entered an integer 0 or greater
+Use a sentinel-controlled while loop to decide if the user wants to quit this game or not – use 0 as your sentinel value
+Call a function, isEven(), that returns a value; true if the number is even and false if the number is odd
+Display a message telling the user whether the number they entered is even or odd
+Repeat these steps until the user enters 0, then the Math Break menu is re-displayed
+Function primeNumber() does the following:
+
+Prompt user for an integer (0 or larger)
+Validate the user input, checking for negative integers, and not move forward until the user has entered an integer 0 or greater
+Use a sentinel-controlled while loop to decide if the user wants to quit this game or not – use 0 as your sentinel value
+Call a function, isPrime(), that returns a value; true if the number is prime and false if the number not prime
+Display a message telling the user whether the number they entered is prime or not
+Repeat these steps until the user enters 0, then the Math Break menu is re-displayed
+ 
+
+You will submit the following:
+Your program source code named “lab1_Firstname_Lastname.cpp”
+
+NOTE – Violating any of the following will get you a 20 point deduction on your lab:
+
+Your main() controls the program.  Your main() should never just call another function to do all the work.
+You should NEVER call main().
+You should NEVER intentionally write an infinite loop.
+You should NEVER use break, exit, quit, end, return, or anything to leave a loop, function, or other construct prematurely, unless it is part of the structure as in a switch statement.
+You should NEVER have a function call itself, unless it is intentional recursion.
+You should NEVER use global variables.  However, you may use global constants if it is appropriate and they are used properly.
+You should have only one return statement in a function that returns a value. (Recursion is the exception.)
+
+
+Lab Grade Points                      
+Comments 
+Including:
+Program description (comment block at top of program with name, lab number and complete program description)
+Function descriptions (see function heading below)
+Comments at major algorithm steps (at a minimum)
+Followed directions
+Correct output
+Structured program design
+Meaningful identifier names
+
+Program heading should look similar to this:
+
+/*********************************************************************/
+/* Your name
+/* Lab 1 Solution                                                    
+/* This program does this and that
+/* (give details that would help a programmer understand
+/*  what the program does before looking at the code)                            
+/*********************************************************************/ 
+
+
+
+
+
+Function heading should look similar to this:
+
+/********************************************************************/
+/* Function:   functionName                                       
+/* Inputs:       parameter names and what they represent                                          
+/* Outputs:    return value name and description                     
+/* Purpose:    This function blah, blah, blah...        
+/********************************************************************/
+

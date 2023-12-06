@@ -1,0 +1,88 @@
+COSC 1337 Fundamentals of Programming II
+Kathryn Rehfield
+Lab 6: Dynamically Allocated Arrays, Pointers
+Due: 11/26/23
+Make any modifications necessary to address feedback about your previous lab.
+Note: Your program should not display, sort, find, edit, add tracks or delete tracks if the collection has not been read.
+
+You will add to and modify your Lab 5 to enable tracks for each CD to be added, displayed and deleted. You do not have to give the user the ability to edit a track, unless you just want to.
+Modifications to your program:
+You will add two new menu options, so your menu will now be:
+Read Collection
+Display Collection
+Sort Collection
+Find a CD
+Edit a CD
+Add Tracks for a CD
+Delete All Tracks for a CD
+Math Break
+Quit
+Option 2 – Display Collection
+The tracks should be displayed below the correct CD, indented and numbered, for example:
+Testament                                          Demonic              1997
+     1. Demonic Refusal
+     2. The Burning Times
+     3. Together as One
+     4. Jun-Jun
+     5. John Doe
+     6. Murky Waters
+     7. Hatred’s Rise
+     8. Distorted Lives
+     9. New Eyes of Old
+     10. The Thousand Thrones
+     11. Nostrovia
+Five Finger Death Punch                               American Capitalist         2011
+etc.
+Option 5 – Edit a CD
+You will modify this function so that it first finds the CD to edit, then it passes a pointer to this CD object to a function that will actually perform the editing, including finding out which fields to edit and getting the values.  This new edit function will be a void function, using the parameter list to get the changes back to the calling function.
+Option 6 – Add Tracks for a CD:
+You will first have to find the CD for which the tracks will be added.
+Once it has been found you will ask the user how many tracks there are. You will invoke the object member function to set the number of tracks. 
+Then you will prompt for and read the each track name from the user and store them in the tracks array.
+(Class modifications are discussed below.)
+Option 7 – Delete All Tracks for a CD
+You will first have to find the CD and verify that it does have tracks. (You can check the member variable numTracks for this.)  You will then deallocate the array of tracks.  Don’t forget to reset your pointer value and the numTracks variable.
+
+Note: You do not have to support a sort after tracks have been added.
+
+Modifications to your CD class declaration:
+You will add to your class new member variables:
+number of tracks
+tracks, which will be declared as a pointer to string
+You will add to your class new member functions:
+void setNumTracks(int numberOfTracks)
+This function will allocate memory for the array
+int getNumTracks()
+string getTrackName(int indexInTracksArray)
+viod setTrackName(int indexInTracksArray, string trackName)
+void deleteTracks()
+Add a default constructor, if you don’t already have one that sets the number of tracks for a CD to 0 (zero). You will use this in your display function to tell whether or not there are any tracks to display. 
+Add a destructor. When you are using dynamically allocated memory in your class, you should always have a destructor to free the memory if it has been allocated. The destructor should check the value of the pointer and if it has a value you need to free (delete) the memory and set the pointer to NULL. If it does not have a value then there is no memory to free.
+You will submit the following:
+Your program source code named “lab6_Lastname.cpp”
+ 
+NOTE – Violating any of the following will get you a 20 point deduction on your lab:
+Your main() controls the program.  Your main() should never just call another function to do all the work.
+You should NEVER call main().
+You should NEVER intentionally write an infinite loop.
+You should NEVER use break, exit, quit, end, return, or anything to leave a loop, function, or other construct prematurely, unless it is part of the structure as in a switch statement.
+You should NEVER have a function call itself, unless it is intentional recursion.
+You should NEVER use global variables.  However, you may use global constants if it is appropriate and they are used properly.
+You should have only one return statement in a function that returns a value. (Recursion is the exception.)
+Lab Grade Points
+Comments 
+Including:
+Program description (comment block at top of program with name, lab number and complete program description)
+Function descriptions (see function heading below)
+Comments at major algorithm steps (at a minimum)
+Followed directions
+Correct output
+Structured program design
+Meaningful identifier names
+Function heading should look similar to this:
+/**************************************************/
+/* Function:   functionName                                       
+/* Inputs:       parameter names and what they represent
+/* Outputs:    return value name and description
+/* Purpose:    This function blah, blah, blah...        
+/**************************************************/
